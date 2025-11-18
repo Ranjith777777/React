@@ -1,7 +1,8 @@
 
-import Chennai from "./component/chennai"
+import Chennai from "./component/Chennai"
 import Karnataka from "./component/Karanataka"
 import Kerala from "./component/Kerala"
+import"./App.css"
 
 const App=()=>{
   return(
@@ -9,7 +10,7 @@ const App=()=>{
      <Chennai />
     <Kerala/>
     <Karnataka/>
-
+    
 
      </>
   )
