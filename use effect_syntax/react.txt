@@ -1,0 +1,158 @@
+                         Day1 react
+
+1.Why React Was Launched — The Main Reasons
+Too much manual DOM manipulation
+Before React, developers had to use plain JavaScript or jQuery to update HTML elements manually.
+That was slow, error-prone, and hard to manage as apps got larger.
+React introduced the Virtual DOM, which updates only what’s necessary — making apps much faster.    
+
+2.whatis different between html webpage and react webpage?
+What it is:
+An HTML webpage is built using:
+HTML (structure)
+CSS (style)
+JavaScript (behavior)
+Everything is static unless you manually update it with JavaScript or reload the page.
+react
+A React webpage is built using JavaScript + JSX (HTML-like code).
+It’s dynamic, component-based, and automatically updates parts of the page when data changes — without reloading.
+
+
+3.what is different between react and angular
+| Feature               | React                                                       | **Angular**                                                         |
+
+Type             | Library (for UI)                                                 | Framework (full-featured)                                           |
+Developed by     | Facebook (Meta)                                                  | Google                                                              |
+Language        | JavaScript / JSX                                                 | TypeScript                                                          |
+Learning Curve   | Easier to start                                                  | Steeper (more complex)                                              |
+Data Binding   | One-way (unidirectional)                                         | Two-way binding                                                     |
+DOM               | Virtual DOM (faster)                                             | Real DOM (via change detection)                                     |
+Architecture      | View library only — needs other libraries (like Redux or Router) | Complete MVC/MVVM framework (comes with routing, forms, HTTP, etc.) |
+Performance      | Very fast (thanks to Virtual DOM)                                | Slightly slower for big apps                                        |
+Size             | Smaller (lightweight)                                            | Larger (heavier)                                                    |
+Flexibility       | High — you choose tools                                          | Low — Angular decides structure                                     |
+Community Support | Very large and active                                            | Also large, but more structured                                    
+Best For          | Interactive UI, SPAs, dashboards                                 | Enterprise-scale complex apps  
+
+
+4.what is typescritpt
+Definition
+TypeScript is a superset of JavaScript — meaning it builds on top of JavaScript by adding types.
+So every valid JavaScript code is also valid TypeScript code, but TypeScript gives you extra features like type checking and better code tools.
+
+Static Typing:
+You can define data types (like string, number, boolean) to catch errors before running the code.
+
+Compile-time Checking:
+TypeScript code is checked before running, so you can find bugs early.
+
+Object-Oriented Features:
+It supports classes, interfaces, and inheritance, making code more structured
+
+Better Tooling:
+Editors like VS Code give smart suggestions, autocompletion, and error highlighting.
+
+
+what is variable
+A variable is a name used to store data in a program — like a box that holds a value.
+You can put data in it, use it, and change it later.
+example
+let name = "Ranjith";
+let age = 21;
+
+name and age are variables.
+"Ranjith" (text) and 21 (number) are the values stored in them.
+
+Why We Use Variables
+To store data (like name, number, or result)
+To reuse values easily
+To change data while the program runs
+
+| Keyword | Meaning                           |
+| ------- | --------------------------------- |
+| `var`   | Old way (not recommended now)     |
+| `let`   | Modern, allows value changes      |
+| `const` | Used for values that never change |
+
+5 .what is declaration
+A declaration means telling the computer that a variable, function, or constant exists — giving it a name and sometimes a value.
+In simple words:
+A declaration is when you introduce something to your program for the first time.
+example
+let name;
+
+6.what is initilations?
+Initialization means giving a value to a variable for the first time after (or while) you declare it.
+
+In simple words 👇
+ Declaration = creating the variable
+ Initialization = assigning its first value
+ example
+ let name;           // Declaration
+name = "Ranjith";   // Initialization
+
+7.what is black scope
+Block scope means a variable is only available (can be used) inside the block { } where it is declared.
+A block is any code written inside { }, like in if statements, loops, or functions.
+example
+{
+  let name = "Ranjith";
+  console.log(name); // ✅ Works here
+}
+
+console.log(name);   //  Error: name is not defined
+
+
+8.what is function scope
+Function scope means a variable is only available inside the function where it is declared.
+You cannot use it outside that function.
+variables declared inside a function belong only to that function
+example
+function greet() {
+  let name = "Ranjith";  // function-scoped variable
+  console.log("Hello, " + name); //  Works here
+}
+
+greet();       // Output: Hello, Ranjith
+console.log(name); // Error: name is not defined
+
+
+9.what is hosting scope?
+Hoisting is JavaScript’s behavior of moving variable and function declarations to the top of their scope before code execution.
+Only the declaration is hoisted, not the initialization.
+This applies to var variables and function declarations.
+var example
+console.log(name); // Output: undefined
+var name = "Ranjith";
+console.log(age); //  Error: Cannot access 'age' before initialization
+let age = 21;
+
+ 10.what is closore scope?
+A closure is when a function “remembers” 
+the variables from the scope where it was created, even after that scope has finished
+executing.
+A function can access variables from its outer function even if the outer function is done running.
+inner() is a closure
+Even after outer() finishes, inner() remembers name
+
+11. what is lixical scope?
+Lexical scope means:
+The scope of a variable is determined by where it is written in the code (the structure of the code), not by where it is called.
+A function can access variables that were defined in the place where the function was created.
+
+
+12. in web development process why node is coming which in come first
+ react node,angular?
+ For beginners or in a project:
+Node.js first
+Understand how JavaScript works on the server
+Learn basic backend: HTTP requests, REST APIs, databases
+React or Angular next
+Build the frontend UI
+Connect to backend APIs (Node.js)
+Why Node comes first?
+Because frontend frameworks need data from somewhere (server/database).
+Node gives you the environment to create that backend using the same JavaScript you already know from the frontend.
+
+
+
